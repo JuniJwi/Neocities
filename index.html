@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- ----------------------------------------------------------------- -->
+  <!-- About Your Site (metadata)                                        -->
+  <!-- ----------------------------------------------------------------- -->
+  
+  <!-- Website's icon in the browser -->
+  <link rel="shortcut icon" type="image/png" href="./images/juni-icon.png"/>
+  
+  <!-- Title of your site, in the tab -->
+  <title>Junijwi</title>
+  
+  <!-- Description of your site for preview thumb embed -->
+  <meta name="title" content="Juni's Site">
+  <meta name="description" content="Juni's pages... projects... etc...">
+  
+  <!-- OG / facebook preview embed -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Juni's Site" />
+  <meta property="og:description" content="Juni's pages... projects... etc...">
+  <meta property="og:url" content="https://junijwi.neocities.org/" />
+  <meta property="og:image" content="images/meta-image.png" />
+  
+  <!-- Twitter metadata preview embed -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@junijwi" />
+  <meta name="twitter:image" content="images/meta-image.png">
+  <meta name="twitter:title" content="Juni's Site">
+  <meta name="twitter:description" content="Juni's pages... projects... etc...">
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- Styles                                                            -->
+  <!-- ----------------------------------------------------------------- -->
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="./styles/css/junijwi.css">
+</head>
+
+<body>
+  <div id="app">
+  <div w3-include-html="./styles/templates/navbar.html"></div>
+
+  <!-- ----------------------------------------------------------------- -->
+  <!-- HTML starts here                                                  -->
+  <!-- ----------------------------------------------------------------- -->
+  
+  
+  
+  <!-- ----------------------------------------------------------------- -->
+  <!-- HTML ends here                                                    -->
+  <!-- ----------------------------------------------------------------- -->
+  
+  <!-- footer -->
+  <div w3-include-html="./styles/templates/footer.html"></div>
+  
+  </div>
+  
+  <!-- ----------------------------------------------------------------- -->
+  <!-- Script Calls                                                      -->
+  <!-- ----------------------------------------------------------------- -->
+  
+  <!-- include HTML -->
+  <script src="./styles/js/includeHTML.js"></script>
+  
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/499bf425fc.js" crossorigin="anonymous"></script>
+  
+  <!-- Misc -->
+  <script>
+  // ---- include HTML
+  includeHTML();
+  
+  // ---- tool tips
+  $(document).ready(function(){
+    $('[data-bs-toggle="tooltip"]').tooltip();
+  });
+  </script> 
+    
+</body>
+</html>
