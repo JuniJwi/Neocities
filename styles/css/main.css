@@ -1,0 +1,156 @@
+/**************************************************************************************************
+  
+  Font definitions 
+
+**************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+/**************************************************************************************************
+  
+  Layout
+  
+**************************************************************************************************/
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #444444;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  font-family: Roboto Condensed;
+}
+
+.container-fluid {
+  max-width: 800px;
+}
+
+/* Header */
+
+.site-header-image {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  position: relative;
+}
+
+.navbar .navbar-brand, .navbar .nav-item {
+  text-transform: uppercase;
+  font-family: Roboto Mono; 
+}
+
+.topbutton {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* Text */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+h1, .h1 {
+  color: #ff8100;
+}
+
+a {
+  color: #ff8100;
+  transition: color .2s;
+}
+a:hover {
+  color: #0dc68f;
+}
+
+hr{
+  background-color: rgba(0,0,0,.1);
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
+
+.site-footer {
+    text-align: center;
+}
+
+.site-footer .navbar {
+    padding-bottom: 0;
+}
+.site-footer .navbar .navbar-nav {
+    flex-direction: row;
+}
+.site-footer .navbar .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.site-footer .copyright {
+    padding: 0 1rem 1rem;
+    color: rgba(0,0,0,.3);
+}
+
+.mce-content-body {
+    padding: 20px;
+}
+
+/**************************************************************************************************
+    
+    Mobile View (XS/S)
+    
+**************************************************************************************************/
+
+@media (max-width: 767px) {
+    h1, .h1 {
+        font-size: 2rem !important; 
+    }
+      
+    h2, .h2 {
+    font-size: 1.75rem !important; 
+    }
+    
+    h3, .h3 {
+    font-size: 1.5rem !important; 
+    }
+    
+    h4, .h4 {
+    font-size: 1.25rem !important; 
+    }
+    
+    h5, .h5 {
+    font-size: 1rem !important; 
+    }
+    
+    h6, .h6 {
+    font-size: 1rem !important; 
+    }
+}
+
+/**************************************************************************************************
+    
+    Mobile View (XS/S/MD)
+    
+**************************************************************************************************/
+
+@media (max-width: 991px) {
+	.site-header-image {
+	  display: none;
+	}
+	
+	/*fix for screen being over-wide on mobile*/
+	.container-fluid {
+	  padding: 0; max-width: 100%;
+	}
+	
+	.row {
+		margin:0; max-width:100%;
+	}
+    
+	.site-footer .navbar .navbar-nav {
+		flex-wrap: wrap; justify-content: center;
+	}
+}
